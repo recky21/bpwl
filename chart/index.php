@@ -20,7 +20,7 @@
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'coloumn',        //Tipe tampilan grafik, sobat bisa menggunakan tampilan bar, pie, line, radar dan sebagainya
+    type: 'bar',        //Tipe tampilan grafik, sobat bisa menggunakan tampilan bar, pie, line, radar dan sebagainya
     data: {
         labels: [<?php while($b = mysqli_fetch_array($nama_pekerjaan)) { echo '"' . $b['nama_pekerjaan'] . '",'; } ?>], //keterangan nama-nama label
         datasets: [{
